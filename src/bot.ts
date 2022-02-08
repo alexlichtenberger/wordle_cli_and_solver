@@ -138,9 +138,9 @@ export class Bot {
         })
         if (this.is_solver) { 
             // console.log(word_scores)
-            console.log("SUGGESTED WORDS: --------------------------------")
+            console.log("MOST LIKELY WORDS: --------------------------------")
             console.log(word_scores[word_scores.length-1])
-            console.log("END SUGGESTED WORDS: ----------------------------")
+            console.log("END MOST LIKELY WORDS: ----------------------------")
         }
 
         let top_words = word_scores[word_scores.length-1]
