@@ -7,14 +7,17 @@ let bot = new Bot({is_solver: true})
 
 const get_user_grade = (ctx: Game_State) => {
     const prompt = require('prompt-sync')();
-    console.log("Enter the suggested guess and input wordle's feedback")
-    console.log("'w' for wrong, 'c' for correct, 'i' for included")
-                  
+    console.log("Enter the suggested guess and input wordle's feedback.")
+    console.log("Use 'w' for wrong, 'c' for correct, 'i' for included.")
+    console.log("Gf you won, type 'won', 'win' or 'exit' to close the solver.")
     console.log("ex: 🟩⬛⬛🟨🟩 -> cwwic")
-    console.log("                          XXXXX")
-    let str_input: string = prompt('What did wordle tell you: ')
+    console.log("                            XXXXX")
+    let str_input: string = prompt("What was wordle's feeback?: ")
     if (str_input.toLowerCase() === 'win' || str_input.toLowerCase() === 'won' || str_input.toLowerCase() === 'exit') {
         game.display(ctx)
+        console.log("You won!")
+        console.log("Thanks for using the wordle sover!")
+        console.log("Come back for tomorrow's wordle!")
         process.exit(0)
     }
     return str_input.split("").map((letter) => {
