@@ -1,0 +1,22 @@
+{
+  "name": "wordle",
+  "version": "1.0.0",
+  "description": "Wordle Clone/solver",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "prestart": "tsc -b",
+    "start": "node dist/bot.js",
+    "cli_game": "tsc -b && node dist/wordle_cli.js",
+    "solver": "tsc -b && node dist/solver.js"
+  },
+  "author": "Alex Lichtenberger",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0",
+    "typescript": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.15"
+  }
+}
