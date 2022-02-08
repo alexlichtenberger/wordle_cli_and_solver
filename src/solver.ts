@@ -11,7 +11,7 @@ const get_user_grade = (ctx: Game_State) => {
     console.log("'w' for wrong, 'c' for correct, 'i' for included")
                   
     console.log("ex: 🟩⬛⬛🟨🟩 -> cwwic")
-    console.log("                           XXXXX")
+    console.log("                          XXXXX")
     let str_input: string = prompt('What did wordle tell you: ')
     if (str_input.toLowerCase() === 'win' || str_input.toLowerCase() === 'won' || str_input.toLowerCase() === 'exit') {
         game.display(ctx)
