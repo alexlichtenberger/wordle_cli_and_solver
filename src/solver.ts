@@ -9,7 +9,8 @@ const get_user_grade = (ctx: Game_State) => {
     const prompt = require('prompt-sync')();
     console.log("Enter the suggested guess and input wordle's feedback")
     console.log("'w' for wrong, 'c' for correct, 'i' for incorrect")
-    console.log("                          XXXXX")
+                  
+    console.log("ex: 🟩⬛⬛🟨🟩 -> cwwic   XXXXX")
     let str_input: string = prompt('What did wordle tell you: ')
     if (str_input.toLowerCase() === 'win' || str_input.toLowerCase() === 'won' || str_input.toLowerCase() === 'exit') {
         game.display(ctx)
