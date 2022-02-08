@@ -54,19 +54,19 @@ export const str_to_word = (word): Word => {
 }
 
 const default_grade_fn = (ctx: Game_State, guess: Word) => {
-    let display = []
+    let grade = []
     guess.letters.forEach((ltr, index) => {
         if (ltr === ctx.target.letters[index]){
-            display.push(TILE_STATES._C)
+            grade.push(TILE_STATES._C)
         }
         else if (ctx.target.letters.includes(ltr)){
-            display.push(TILE_STATES._I)
+            grade.push(TILE_STATES._I)
         }
         else {
-            display.push(TILE_STATES._W);
+            grade.push(TILE_STATES._W);
         }
     })
-    return display;
+    return grade;
 }
 
 export const create_game = (input_fn, display, target?, grade_fn?): Game => {
