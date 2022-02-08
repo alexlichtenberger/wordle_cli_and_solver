@@ -4,7 +4,7 @@ This repos contains a clone of wordle and a playable command line version of the
 
 It also contains a solver to help solve the daily official wordle puzzles.
 
-### Usage
+## Usage
 
 First clone the repo, cd in and run `npm i`
 
@@ -14,4 +14,4 @@ To run the cli version of the game, run `npm run cli_game`
 
 To run the solver, run `npm run solver`
 
-These three commands all run the build before executing.
+These three commands all run a full tsc build before executing.
