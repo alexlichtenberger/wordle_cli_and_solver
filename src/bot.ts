@@ -1,5 +1,5 @@
 import { randomInt } from 'crypto'
-import {play_round, Guess, Word, Game_State, Game, words, acceptable_words, str_to_word, GAME_STATUS, NUM_GUESSES, TILE_STATES, create_game} from './wordle'
+import {play_round, Word, Game_State, words, str_to_word, GAME_STATUS, TILE_STATES, create_game} from './wordle'
 import {draw_board_cli} from './shared'
 
 export class Bot {

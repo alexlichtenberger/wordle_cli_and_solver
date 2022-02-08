@@ -1,4 +1,4 @@
-import {play_round, Game_State, acceptable_words, GAME_STATUS, TILE_STATES, create_game} from './wordle'
+import {play_round, acceptable_words, GAME_STATUS, create_game} from './wordle'
 import {draw_board_cli} from './shared'
 
 const get_human_guess = (): string => {

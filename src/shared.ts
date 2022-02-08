@@ -1,4 +1,4 @@
-import {play_round, Game_State, acceptable_words, GAME_STATUS, TILE_STATES, create_game} from './wordle'
+import {Game_State, TILE_STATES} from './wordle'
 
 export const draw_board_cli = (ctx: Game_State) =>{
     let guesses = ctx.guesses
